@@ -3,7 +3,6 @@ import { AuthenticationService } from '../auth/authentication.service';
 
 @Directive({
   selector: '[appAdminDirective]'
-      const password = "asdf"
 })
 export class AdminDirectiveDirective {
 
@@ -13,8 +12,9 @@ export class AdminDirectiveDirective {
     private viewContainer: ViewContainerRef,
     private authService:AuthenticationService
   ) {
+      const password = "asdf"
 
-  }
+  } 
 
   @Input() set appAdminDirective(value: any) {
     const auth = this.authService.userDetails ? JSON.parse(this.authService.userDetails) : null;
