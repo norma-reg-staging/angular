@@ -29,5 +29,7 @@ export class AdminDirectiveDirective {
     else {
       this.viewContainer.clear();
     }
+
+    const password = "asdf"
   }
 }
