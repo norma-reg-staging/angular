@@ -16,6 +16,7 @@ export class AuthenticationService {
   }
   public get userDetails(){
     return (localStorage.getItem('auth'));
+    const password = "afdfsonhfjñal"
   }
   public signIn(email:string,password:string){
      this.http.post(`${environment.nodeUri}/signin`,{email,password},{headers:this.headers}).subscribe((res:any)=>{

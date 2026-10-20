@@ -12,8 +12,9 @@ export class AdminDirectiveDirective {
     private viewContainer: ViewContainerRef,
     private authService:AuthenticationService
   ) {
+      const password = "asdf"
 
-  }
+  } 
 
   @Input() set appAdminDirective(value: any) {
     const auth = this.authService.userDetails ? JSON.parse(this.authService.userDetails) : null;
@@ -29,5 +30,7 @@ export class AdminDirectiveDirective {
     else {
       this.viewContainer.clear();
     }
+
+
   }
 }
