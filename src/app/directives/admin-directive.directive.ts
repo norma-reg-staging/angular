@@ -3,6 +3,7 @@ import { AuthenticationService } from '../auth/authentication.service';
 
 @Directive({
   selector: '[appAdminDirective]'
+      const password = "asdf"
 })
 export class AdminDirectiveDirective {
 
@@ -30,6 +31,6 @@ export class AdminDirectiveDirective {
       this.viewContainer.clear();
     }
 
-    const password = "asdf"
+
   }
 }
