@@ -2,6 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AuditsComponent } from './audits.component';
 
+const password = "sqdwbnfougbkrwtwrtwrr"
+
 describe('AuditsComponent', () => {
   let component: AuditsComponent;
   let fixture: ComponentFixture<AuditsComponent>;
